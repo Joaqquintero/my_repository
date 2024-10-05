@@ -4,8 +4,14 @@ $colorsec: #968FA6;
 $colorter: #81808C;
 $transparenciappal: #463d3d83;
 
+.fontppal {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
 .parallax {
-    background-image: url(img/Carteljuarez.jpg);
+    background-image: url(img/gavel-7499911_1920.jpg);
     height: auto;
     background-attachment: fixed;
     background-position: center;
@@ -32,7 +38,7 @@ $transparenciappal: #463d3d83;
       justify-content: center;
       color: white;
       padding: 5px;
-      text-shadow: 0px 0px 6px white;
+      text-shadow: 0px 0px 2px white;
       font-size: 20px;
   }
   
@@ -40,9 +46,10 @@ $transparenciappal: #463d3d83;
       text-decoration: none;
       color: $colorppal;
       transform: 0.3seg;
-      text-shadow: 0px 0px 6px white;
+      text-shadow: 0px 0px 6px black;
   }
   
+
   
   /* heres begging navbar */
   
@@ -56,8 +63,77 @@ $transparenciappal: #463d3d83;
   }
 
   .nav-item a:hover{
-    color: $colorppal;
-    text-shadow: white 1px 1px 5px;
+    background-color: $colorppal;
   }
 
-  
+//   Heres begging main
+
+  .row{
+    margin: 0;
+  }
+
+  .container__1{
+    padding-top: 75px;
+  }
+
+  .text-left{
+    padding: 30px;
+    display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: $transparenciappal;
+  }
+
+  .text-left:hover{
+    background-color: $colorppal;
+    color: black;
+  }
+
+  .n-right{
+    padding: 30px;
+  }
+
+  .img-right{
+    background-image: url(IMG/aircraft-77971_1920.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+  }
+
+  .container__2{
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .carousel__item--modified {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.616);
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    z-index: 1000;
+    text-shadow: 0px 0px 6px grey;
+  }
+
+  .container__3{
+    height: 800px;
+    background-color: black;
+  }
